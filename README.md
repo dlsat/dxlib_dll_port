@@ -1,10 +1,11 @@
 # DxLibDLLCPP
 
 ## 概要
+* DXライブラリ(DxLib)とは - http://dxlib.o.oo7.jp/index.html
 * 通常のDxLibのプロジェクトを、ソースの変更なしにC/C++からDxLibのDLL(本来はC#向けのもの)を呼び出すためのライブラリです。
 
 ### ダウンロード
-* リリースページからダウンロードできます。 https://github.com/dlsat/dxlib_dll_cpp/releases
+* リリースページからダウンロードできます。 - https://github.com/dlsat/dxlib_dll_cpp/releases
 
 ### 現在のバージョン
 * DxLib 3.16b
