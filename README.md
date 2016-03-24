@@ -1,18 +1,18 @@
 # DxLibDLLCPP
 
-## �T�v
-* DX���C�u����(DxLib)�Ƃ� - http://dxlib.o.oo7.jp/index.html
-* �ʏ��DxLib�̃v���W�F�N�g���A�\�[�X�̕ύX�Ȃ���C/C++����DxLib��DLL(�{����C#�����̂���)���Ăяo�����߂̃��C�u�����ł��B
+## 概要
+* これは通常のDxLibのプロジェクトを、ソースの変更なしにC/C++からDxLibのDLL(本来はC#向けのもの)を呼び出すためのライブラリです。
+* DXライブラリ(DxLib)とは - http://dxlib.o.oo7.jp/index.html
 
-### �_�E�����[�h
-* �����[�X�y�[�W����_�E�����[�h�ł��܂��B - https://github.com/dlsat/dxlib_dll_cpp/releases
+### ダウンロード
+* リリースページからダウンロードできます。 - https://github.com/dlsat/dxlib_dll_cpp/releases
 
-### ���݂̃o�[�W����
+### 現在のバージョン
 * DxLib 3.16b
 * DxLibDLLCPP 0.1
 
-### ���ݎg���Ȃ��֐�
-���݉��L�̊֐��������Ēʏ��DxLib�Ɠ����悤�ɋL�q���邱�Ƃ�DLL�𗘗p���邱�Ƃ��ł��܂��B
+### 現在使えない関数
+現在下記の関数を除いて通常のDxLibと同じように記述することでDLLを利用することができます。
 * DrawRotaFormatStringToHandleToZBuffer
 * DrawRotaFormatStringToZBuffer
 * DrawRotaStringToHandleToZBuffer
@@ -26,14 +26,14 @@
 * sprintfDx
 * sscanfDx
 
-## �g����
-* `main`�t�H���_��ʏ��DxLib�ł�`�v���W�F�N�g�ɒǉ����ׂ��t�@�C��_VC�p`�t�H���_�̑���Ɏg�p���Ă��������B
-* ���̃��C�u�������g�p����ꍇ�͖{����DxLib��`�v���W�F�N�g�ɒǉ����ׂ��t�@�C��_VC�p`�͎g�p���Ȃ��ł��������B
-* ���̂��ƁA`main`�t�H���_�ɂ���`DxLib_exc.cpp`�t�@�C�����R���p�C���A�����N����悤�Ƀv���W�F�N�g�ɒǉ����Ă��������B
+## 使い方
+* `main`フォルダを通常のDxLibでの`プロジェクトに追加すべきファイル_VC用`フォルダの代わりに使用してください。
+* このライブラリを使用する場合は本来のDxLibの`プロジェクトに追加すべきファイル_VC用`は使用しないでください。
+* そのあと、`main`フォルダにある`DxLib_exc.cpp`ファイルをコンパイル、リンクするようにプロジェクトに追加してください。
 
-## �́HC/C++�Ȃ炱�ꂢ��Ȃ��ˁH
-* ������g����DxLib�̃T���v���v���W�F�N�g��exe�t�@�C����70KB�قǂɂȂ�܂��I
-* �Ȃ̂ŉߋ���exe�t�@�C����S���ۑ����Ȃ��Ⴂ���Ȃ��Ƃ��Ɏg���܂��摽���I
-* �ق�A�o�[�W�����Ǘ��Ƃ�
-* ���ƃA�b�v�f�[�g�p�b�`���J����Ƃ��ɃT�C�Y�ߖ�ł��邩��
+## は？C/C++ならこれいらなくね？
+* これを使うとDxLibのサンプルプロジェクトのexeファイルが70KBほどになります！
+* なので過去のexeファイルを全部保存しなきゃいけないときに使えますよ多分！
+* ほら、バージョン管理とか
+* あとアップデートパッチ公開するときにサイズ節約できるかも
 
