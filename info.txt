@@ -1,0 +1,33 @@
+DxLibHeader/DxCompileConfig.h
+    lib functions: 0
+DxLibHeader/DxDataType.h
+    lib functions: 0
+DxLibHeader/DxDataTypeWin.h
+    lib functions: 0
+DxLibHeader/DxFunctionWin.h
+    lib functions: 195
+DxLibHeader/DxLib.h
+    lib functions: 1828
+DxLibDotNet/Source/DxDLL.h
+    dll functions: 1987
+Statistics
+  LIB functions: 2010
+  DLL functions: 1987
+  Replace
+    Rename: 1951
+    Special: 47
+    NG: 12
+    DLLOnly: 36
+NG: DrawRotaFormatStringToHandleToZBuffer
+NG: DrawRotaFormatStringToZBuffer
+NG: DrawRotaStringToHandleToZBuffer
+NG: DrawRotaStringToZBuffer
+NG: FileRead_scanf
+NG: PlayBeep
+NG: SetBeepFrequency
+NG: StopBeep
+NG: printfDx
+NG: snprintfDx
+NG: sprintfDx
+NG: sscanfDx
+replace result: 97.1%
